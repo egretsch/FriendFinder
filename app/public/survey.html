@@ -16,12 +16,37 @@
     <!-- Chosen -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <style>
+        body {
+            background-color: #db3b21;
+        }
+    
+        .moveDown {
+            margin-top: 10%;
+        }
+    
+        .text {
+            color: yellowgreen;
+            font-family: 'Nosifer', cursive;
+        }
+    
+        .desing {
+            font-family: 'Press Start 2P', cursive;
+            text-decoration: nounderline;
+        }
+    
+        a {
+            color: rgba(22, 226, 3, 0.815);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Nosifer|Press+Start+2P" rel="stylesheet">
+
 
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container text">
 
         <h2>Survey Questions</h2>
         <hr>
@@ -182,7 +207,7 @@
 
         <hr>
         <footer class="footer">
-            <div class="container">
+            <div class="container desing">
                 <p>
                     <a href="/api/friends">API Friends List</a> |
                     <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a>
@@ -289,7 +314,7 @@
 
                     // Show the modal with the best match
                     $("#results-modal").modal("toggle");
-
+                    
                 });
             } else {
                 alert("Please fill out all fields before submitting!");
